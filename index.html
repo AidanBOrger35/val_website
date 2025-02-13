@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Textbox Prompt</title>
+    <title>Valentine's Day Prompt</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -11,13 +11,14 @@
             justify-content: center;
             align-items: center;
             height: 100vh;
-            background-color: #f4f4f4;
+            background: url('valentines.png') no-repeat center center/cover; /* Replace 'valentines-bg.jpg' with your image */
         }
         .container {
-            background: white;
+            background: rgba(255, 255, 255, 0.9);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
         }
         input[type="text"] {
             width: 100%;
@@ -28,19 +29,19 @@
             margin-top: 10px;
             padding: 8px 12px;
             border: none;
-            background: #007BFF;
+            background: #e63946;
             color: white;
             cursor: pointer;
             border-radius: 4px;
         }
         button:hover {
-            background: #0056b3;
+            background: #d62839;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <label for="textbox">Enter something:</label>
+        <label for="textbox">Will you be my Valentine?</label>
         <input type="text" id="textbox" placeholder="Type here...">
         <button onclick="showAlert()">Submit</button>
     </div>
