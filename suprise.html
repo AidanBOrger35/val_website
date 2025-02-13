@@ -54,3 +54,64 @@
     <img url('spinning.png') alt="Spinning Surprise" class="spinning-image">
 </body>
 </html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Surprise!</title>
+    <style>
+        @keyframes flash {
+            0% { border-color: red; }
+            50% { border-color: pink; }
+            100% { border-color: red; }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100vh;
+            background: pink;
+            text-align: center;
+            border: 10px solid red;
+            animation: flash 1s infinite;
+            background-image: url('lilies.jpg'); /* Add your background image here */
+            background-size: cover; /* Ensure it covers the entire screen */
+            background-position: center; /* Center the background image */
+        }
+        .banner {
+            font-size: 3rem;
+            font-weight: bold;
+            color: white;
+            background: red;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .decorations {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: red;
+        }
+        .spinning-image {
+            margin-top: 20px;
+            width: 150px;
+            height: 150px;
+            animation: spin 2s linear infinite;
+        }
+    </style>
+</head>
+<body>
+    <div class="banner">Woohooooo!!!!</div>
+    <div class="decorations">🎉🎊💖💘🥳💝🎈</div>
+    <img url('spinning.png') alt="Spinning Surprise" class="spinning-image">
+</body>
+</html>
