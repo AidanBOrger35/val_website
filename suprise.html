@@ -5,6 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Surprise!</title>
     <style>
+        @keyframes flash {
+            0% { border-color: red; }
+            50% { border-color: pink; }
+            100% { border-color: red; }
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
         body {
             font-family: Arial, sans-serif;
             display: flex;
@@ -14,6 +23,8 @@
             height: 100vh;
             background: pink;
             text-align: center;
+            border: 10px solid red;
+            animation: flash 1s infinite;
         }
         .banner {
             font-size: 3rem;
@@ -29,30 +40,17 @@
             font-size: 2rem;
             color: red;
         }
-        .button {
+        .spinning-image {
             margin-top: 20px;
-            padding: 10px 20px;
-            font-size: 1.2rem;
-            color: white;
-            background: #e63946;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-        .button:hover {
-            background: #d62839;
+            width: 150px;
+            height: 150px;
+            animation: spin 2s linear infinite;
         }
     </style>
 </head>
 <body>
     <div class="banner">Woohooooo</div>
     <div class="decorations">🎉🎊💖💘🥳💝🎈</div>
-    <button class="button" onclick="goBack()">Go Back</button>
-    
-    <script>
-        function goBack() {
-            window.location.href = "index.html";
-        }
-    </script>
+    <img src="spinning-image.png" alt="Spinning Surprise" class="spinning-image">
 </body>
 </html>
