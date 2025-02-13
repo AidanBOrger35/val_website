@@ -29,10 +29,30 @@
             font-size: 2rem;
             color: red;
         }
+        .button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 1.2rem;
+            color: white;
+            background: #e63946;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button:hover {
+            background: #d62839;
+        }
     </style>
 </head>
 <body>
     <div class="banner">Woohooooo</div>
     <div class="decorations">🎉🎊💖💘🥳💝🎈</div>
+    <button class="button" onclick="goBack()">Go Back</button>
+    
+    <script>
+        function goBack() {
+            window.location.href = "index.html";
+        }
+    </script>
 </body>
 </html>
